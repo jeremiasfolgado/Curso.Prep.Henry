@@ -1,0 +1,21 @@
+* Variables
+    Son elementos que su utilizan para almacenar un valor y despues poder utilizarlo para distintas operaciones. 
+    En Javascript las variables no son definitivas, puediendo ser modicadas con solo asignar un nuevo valor. Estos se representan como un tipo de datos, 
+    que segun sus características limita las operaciones que pueden realizar. 
+    
+* Strings
+    Son bloques de caracteres, y se definen entre comillas. Es la manera que tiene el procesador de reconocerlas y asi poder aplicarlas.
+
+* Funciones  
+    Son un tipo de elemento que le indica al procesador que lo que encierra son un conjunto de instrucciones que debe ejecutar.
+    Se escribe con la palabra clave function separada con un espacio el nombre de la funcion, y entre parentesis se pueden adicionar
+    variables para ejecutar, separadas entre comas si son mas de una, y sigue abriendo llaves, entre ellas es que se escribe el codigo a ejecutar.
+    
+
+* Declaraciones
+    Dentro del código podemos utilizar declaraciones tipo console.log si queremos ver una string, pero si se necesita obtener un resultado 
+    se aplica return a la variable a ejecutar. Tambien existe la posibilidad utilizar valores de comparación a fin de que el procesador compare los 
+    valores obtenidos y nos devuelva una afirmación verdadero o false (true or false) este tipo de valores se los conoce como booleanos, 
+    para poder aplicarlas se debe utilizar la declaración if.
+
+    
