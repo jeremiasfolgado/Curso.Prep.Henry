@@ -1,0 +1,12 @@
+* Bucle for
+    Es un bucle que sirve para realizar tareas repetitivas, ejecuta expresiones hasta que encuentra su límite y se detiene.
+    debe contener siempre una variable, que es lo que se repetira, un condicional que es hasta cuando debe repetirse y un paso 
+    marca el salto de valor. 
+
+* Operadores lógicos
+    como los operadores de comparación permiten examinar variables entre si, los operadores logicos nos permiten comparar comparaciones desde 
+    una lógica booleana obteniendo valores de true or false, los oeradores lógicos son el $$ || !, 
+    
+    $$ AND o Y, devuelve verdadero solo si ambos operandos lo son, de caso contrario siempre es falso.
+    || O , devuelve falso solo si ambos operandos lo son, de caso contrario siempre es verdadero.
+    ! o NOT , invierte resultado de lo que le sigue, lo correcto seria decir que niega el resultado y lo invierte.
