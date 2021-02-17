@@ -1,0 +1,33 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.divClass{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    
+}
+h1{
+    color: cadetblue;
+        
+}
+
+#spanId {
+    margin: 50px;
+    color: aquamarine;
+    font-size: 18px;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    margin-top: 30px;
+    height: 600px;
+    width: 500px;
+    background-color: cornsilk;
+    padding: 50px;
+    border: solid 3px blue ;
+}
