@@ -38,11 +38,11 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function(){
-    var stringinversa = [];
+    var stringInversa = [];
     for (let i = 0; i < this.length ; i++) {
-      stringinversa.unshift (this[i]); 
+      stringInversa.unshift (this[i]); 
     }
-    return stringinversa.join ("");
+    return stringInversa.join ("");
   }
   
 
@@ -82,25 +82,7 @@ function agregarStringInvertida() {
   }
 }
 }  
-   /* Persona.prototype.detalle = function(){
-        return {
-          nombre: this.nombre,
-          apellido: this.apellido,
-          edad: this.edad,
-          domicilio: this.domicilio
-        }
-      }*/
-
-
-    /*detalle = function() {
-      return { 
-        nombre: this.nombre,
-        apellido: this.apellido,
-        edad: this.edad,
-        domicilio: this.domicilio
-      }
-    }*/
-    
+  
     
 
 
