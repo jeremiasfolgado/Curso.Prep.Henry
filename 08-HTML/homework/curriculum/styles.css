@@ -27,8 +27,10 @@ h2 {
     color: black;
 }
 section {
-    text-align: center;
-}
+    justify-content: center;
+    margin: auto;
+}    
+
 
 
 
@@ -80,7 +82,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /*text-align: center;*/
 }
 .textoeducacion {
     width: 1000px;
@@ -90,26 +93,57 @@ h1 {
 
 /* estilos experiencias */
 
-
+.Experienciaslaborales{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
     
 .experiencia {
     display: inline-block;
     flex-wrap: nowrap;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     margin: 100px;
     
+    
+    
 }
+
+
+.contenedortodas{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
 /*fin estilos experiencias*/
 
 /*estilos skills*/
+.skills{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .tecnicas h3, .blandas h3 {
-    margin: 30px;
+    margin: auto;
 }
 .blandas {
     width: 800px;
-    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -120,8 +154,17 @@ h1 {
     width: 100%;
     height: 500 px;
     margin: auto;  
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
      
-}   
+} 
+.contenedorfooter{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}  
 .escalada {
     width: 600px;
 }
@@ -133,4 +176,5 @@ h1 {
 }
 .fotoescalada img{
     width: 415px;
+    margin-left: 50px;
 }

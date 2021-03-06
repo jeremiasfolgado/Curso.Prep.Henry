@@ -2,9 +2,9 @@
 Es un elemento que, a diferencia de las variables que nos permiten asignar un solo tipo de datos dentro, 
 podemos introducir una cantidad x de valores (string, numeros o booleanos), otra ventaja que posee es que
 no estan sujetas a poseer un solo tipo de datos, es decir que dentro podemos aplicar valores de distinta 
-naturaleza. A partir del elemento for es que podemos recorrer su contenido y asi operarlas a partir de las 
-herramientas ya conocidas. 
-para declarar un array la sintaxis es simple, se declara una variable y el contenido del array esta dentro 
+naturaleza. A partir del bucle for es que podemos recorrer su contenido y asi operarlas a partir de las 
+herramientas ya conocidas, tambien se puede utilizar el bucle while u otros métodos para recorrer el array. 
+Para declarar un array la sintaxis es simple, se declara una variable y el contenido del array esta dentro 
 corchetes, separados por comas. A cada uno de estos valores se les asigna una posicion dentro del array, y 
 estas se enumeran desde el 0 en adelante (siendo 0 la ubicacion del primer elemento).
 

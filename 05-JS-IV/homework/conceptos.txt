@@ -1,0 +1,63 @@
+Objetos:
+    Un objeto es un elemento que podemos crear que puede tener diferentes propiedades, mientras los array contienen elementos relacionados
+    entre si, un objeto contiene propiedades que estan relacionadas con el objeto en si mismo. puede recibir cualquier tipo de valor (string, numero o booleanos).
+    para instanciarlo se declara como una variable y las propiedades se asignan entre corchetes.
+
+    ej:
+     var perro = {
+         nombre: "Conan",
+         edad: 3,
+         color: "marron"
+     }
+
+     las propiedades estan declaradas en formato Key-Values, donde Key (clave) es el nombre de la propiedad,
+     y Value (valor) es el valor propiamente dicho de la propiedad.
+
+Métodos:
+    Método es el nombre que reciben las funciones que se instancian dentro de un objeto, es decir sera la función que sera aplicada a partir del objeto.
+    Ademas de los métodos que uno puede instanciar existen muchos que son nativos de cada tipo de objeto, por ejemplo el .length que permite obtener la 
+    longitud de una string o de un array, y muchos más que ya se vienen utilizando en los ejercicios.
+
+Bucle for in
+    Cuando queriamos recorrer un array se podia usar el bucle for en el que se declaraba una variable con un valor numerico, esto es porque en los array la
+    información se organiza en índices numericos, pero en los objetos esto no es así, por eso es que javascript nos brinda otro tipo de bucle, este es el 
+    for in, este bucle nos permite recorrer todas las claves del objeto.
+
+    ejemplo :
+
+    var obj = {a:1, b:2, c:3};
+
+    for (let propiedad in objeto){
+        console.log(`esta es ${propiedad} : ${objeto[propiedad]}`);
+    }
+
+    resultado en consola:
+    
+    esta es a : 1
+    esta es b : 2
+    esta es c : 3
+
+notación de puntos vs notación de corchetes
+
+    En la notación de puntos podemos acceder a la propiedad de un objeto si la llamamos de la siguente manera
+    objeto.propiedad 
+    
+    ejemplo
+    obj.a  
+    esto mostrara en consola el valor de dicha propiedad en el objeto es decir 1.
+
+    También es válido utilizar la notación de corchetes, aquí llamaremos de la llamaremos al objeto y entre corchetes
+    podemos usar una string (nombre de la propiedad), un numero si fuera el nombre de la misma o una variable que tenga 
+    asignado el valor del nombre de la propiedad.
+
+    ej
+    utilizando una string: 
+    
+    obj['a'] mostrará el valor 1 que es el valor que contiene dicha propiedad.
+    
+    utilizando una variable:
+
+    var propiedadDeObj = 'b';
+
+    obj[propiedadDeObj] mostrara el valor 2, porque el valor de la variable es 'b' que es el mismo nombre asiganado a la propiedad de obj.
+    

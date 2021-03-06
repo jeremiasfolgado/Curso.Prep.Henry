@@ -1,0 +1,60 @@
+Clases
+
+
+Muchas veces cuando estamos creando objetos, estos comparten propiedades y métodos con otros,
+como por ejemplo a agenda de contactos, donde cada contacto va a tener un nombre, un apellido,
+un telefono, una dirección de mail, etc. Para no tener que copiar una y otro vez el código para 
+cada nuevo contacto que necesitamos agregar es que tenemos las Clases. Si bien JavaScript no es 
+un lenguaje orientado a objetos, toma de otros lenguajes herramientas que nos permiten hacer mas facil 
+nuestro código. Y es este caso el de las clases, a este tipo de objeto podriamos decir que es una función
+que crea un nuevo objeto con propiedades especificas que se le asignaron a la clase. Para instanciarlas
+se las crea con la palabra clave class luego el nombre de la clase con la primera letra en mayuscula, esto es 
+por convención, es decir que se pone en mayuscula no por funcionamiento sino para que cuando otra persona este 
+leyendo nuestro código sepa darse cuenta a simple vista que esta leyendo una clase, seguido se abren llaves, dentro 
+de ellas es que se declara la función constructora con la keyword constructor y entre parentesis los argunmentos que va
+a recibir.
+
+ejemplo:
+
+class NuevoContacto {
+    constructor (nombre, apellido, telefono, email){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.email = email
+    }
+}
+
+Acá ya tenemos nuestra clase instanciada, que ya tiene su nombre y su funcion creadora con sus argumentos, 
+las keyword this se refieren al objeto que sera creado para asignar su propiedad. 
+
+Veamos como se crea un nuevo objeto a partir de una clase.
+
+var nuevoContacto = new NuevoContacto("Jeremias", "Folgado", "2234484396", "jeremias.folgado@gmail.com")
+
+Esta nueva variable con la keyword new le estamos diciendo que es un nuevo contacto y entre parentesis le estamos
+pasando los argumentos que serán asigandos a las propiedades de este nuevo objeto. 
+
+Prototype
+
+    Para poder comprender esto primero hay que comprender que javascript es un lenguaje donde todos los objetos heredan 
+    propiedades de un Objeto principal es el Object.prototype, es decir que al crea un objeto nuevo este tiene de base 
+    todas las propiedades de Object.prototype. Y que nos beneficia esto? nos permite generar nuevas funciones tipo proptotype a una clase
+    para que asi todos los objetos creados con esta clase hereden esta función. 
+
+    ejemplo
+    tomando el ejemplo de agenda, podemos aplicar
+
+    NuevoContacto.prototype.saludo = function(){
+    console.log (`Mi nombre es ${this.nombre} y mi telefono es ${this.telefono}`);
+    }
+
+    y podemos llamarlo con notación de punto por ejemplo:
+
+    nuevoContacto.saludo();
+
+    y nos devolvera en consola
+    
+    
+    Mi nombre es Jeremias y mi telefono es 2234484396
+

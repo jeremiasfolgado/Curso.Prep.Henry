@@ -1,0 +1,30 @@
+
+Funciones Callback
+
+    Basicamente un Callback es un función que recibe como argumento otra funcion, por convención
+    estas se escriben como cb, para que cuando otro programador vea nuestro código comprenda que 
+    dicha función esta recibiendo otra función como argumento, es decir un Callback.
+
+    ejemplo
+
+        primero definimos una función
+
+        function primeraFuncion () {
+            console.log("Hola soy un Callback");
+        }
+
+        luego se define otra función que sera la que recibe como argumento el Callback. y dentro del 
+        código la ejecutamos.
+        
+
+        función funcionCallback (cb) {
+            cb()
+        }
+
+        Para ejecutarla sería de la siguiente manera:
+
+        funcionCallback(primeraFuncion);
+        //mostrará en consola => Hola soy un Callback
+
+        es decir ejecutamos la funcionCallback que recibió como parametro la primeraFuncion.
+

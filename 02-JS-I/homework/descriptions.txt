@@ -1,15 +1,16 @@
 * Variables
     Son elementos que su utilizan para almacenar un valor y despues poder utilizarlo para distintas operaciones. 
-    En Javascript las variables no son definitivas, puediendo ser modicadas con solo asignar un nuevo valor. Estos se representan como un tipo de datos, 
-    que segun sus características limita las operaciones que pueden realizar. 
+    En Javascript las variables no son definitivas, puediendo ser modicadas con solo asignar un nuevo valor(salvo que haya sido declarada con la keyword const que la convierte en una constante) 
+    Estos se representan como un tipo de datos, que segun sus características limita las operaciones que pueden realizar. 
     
 * Strings
     Son bloques de caracteres, y se definen entre comillas. Es la manera que tiene el procesador de reconocerlas y asi poder aplicarlas.
 
 * Funciones  
     Son un tipo de elemento que le indica al procesador que lo que encierra son un conjunto de instrucciones que debe ejecutar.
-    Se escribe con la palabra clave function separada con un espacio el nombre de la funcion, y entre parentesis se pueden adicionar
-    variables para ejecutar, separadas entre comas si son mas de una, y sigue abriendo llaves, entre ellas es que se escribe el codigo a ejecutar.
+    Se escribe con la palabra clave function separada con un espacio el nombre de la funcion, y entre parentesis se pueden colorcar los argumentos que va a recibir o no,
+    separadas con comas si son mas de una, y sigue abriendo llaves, entre ellas es que se escribe el codigo a ejecutar. (esta es una de la maneras de declarar una función, también se la puede declarar dentro de una variable).
+    
     
 
 * Declaraciones
