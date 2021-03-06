@@ -29,7 +29,8 @@ h2 {
 section {
     justify-content: center;
     margin: auto;
-}    
+} 
+
 
 
 
@@ -83,7 +84,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*text-align: center;*/
+    
 }
 .textoeducacion {
     width: 1000px;
